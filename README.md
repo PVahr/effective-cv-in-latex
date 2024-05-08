@@ -3,6 +3,8 @@ An effective, modern, professional CV that looks so good you wouldn't tell it's 
 
 Heavily inspired, cough cough maybe a bit copied, from the great materials of Jean-Iuc Doumont, that you can retrieve at this [link](https://principiae.be/pdfs/ECV-1.01.pdf).
 
+It uses the Georgia font from the fontspec package.
+
 ## How to use it
 1. Download everything
 2. Change the content to your taste
