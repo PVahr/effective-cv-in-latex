@@ -1,0 +1,213 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=3.cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\pagestyle{empty}
+ \usepackage{array, xcolor}
+ \definecolor{lightgray}{gray}{0.35}
+ \definecolor{darkgray}{gray}{0.25}  
+ \definecolor{miOrange}{RGB}{238,118,0}
+ \colorlet{lightOrange}{miOrange!80!lightgray} % 50% color1, 50% color2
+%%%%%%%%%%%%%%%%%%%%%% MIORANGE IS THE ORANGE USED AS A COLOR HERE, LIGHTORANGE FOR THE PIPES
+ 
+\definecolor{headcolor}{rgb}{0.65, 0.25, 0.25}
+
+
+\setlength{\parindent}{0pt}
+
+\usepackage[pdftex,
+pdfauthor={PVahr via GitHub},
+pdftitle={effective CV worth a reading},
+pdfsubject={},
+pdfkeywords={},
+pdfproducer={},
+pdfcreator={}]{hyperref}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\hypersetup{ colorlinks, citecolor=green, filecolor=green, linkcolor=black, urlcolor=darkgray }
+\newcommand{\mail}[1]{\href{mailto:#1}{#1}}
+
+
+\usepackage{graphicx}
+\usepackage{epstopdf} %converting to PDF
+\usepackage{enumitem}
+\usepackage{mathptmx}
+\usepackage{fontspec}
+
+% Define a custom command for square bullets
+\newcommand{\squarebullet}{\textcolor{miOrange}{\rule{4pt}{4pt}}}
+% Set default settings for itemize environment
+\setlist[itemize]{
+	label=\squarebullet,
+	itemsep=-3pt,
+	topsep=2pt
+}
+
+% vertical pipe in "lightOrange" color
+\newcommand{\myPipe}{\textcolor{lightOrange}{|} }  %%%%%%%% \MYPIPE is the command you can use in  the "Core skills" to make a verical pipe
+
+\usepackage{ragged2e} % to use \justify
+
+% Specify Georgia as the main font
+\setmainfont{Georgia}
+
+
+
+% READ HERE ****** \EVENT DEFINITION *******************************************************************
+% define an "event" as a horizontal stack of minpages environments.
+% the first argument will be the contain the YEARS of the event (2017 - 2019, or the biggest size that fits is 05.2017 - 09.2019)
+% the second will contain the title of the event ("Project manager at Meta"). 
+% 		If used for a degree, the grade of it can be neatly but at the end of the line ("Bachelor in Geography \hfill 6/6")
+% the third contains the text in \normalsize that describes the event, even in lengthy detail
+\newcommand{\event}[3]{%
+	\begin{minipage}[t]{.25\textwidth}
+		{\large #1}
+	\end{minipage}%
+	\begin{minipage}[t]{.75\textwidth}
+		{\large #2}\vspace{5pt} \\ 
+		{\normalsize \textcolor{lightgray}{#3}}
+	\end{minipage}\vspace{15pt}\\
+}
+
+
+
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{minipage}[c][][b]{.6\textwidth}
+	{\Huge Paperon  \textsc{De Paperoni}}\\
+\end{minipage}
+\hfill 
+\begin{minipage}[b]{.3\textwidth}
+	{\flushright
+		\mail{scrooge.mcduck@disney.com} \\
++001 (0)992905099\\
+Paperopoli, TN, USA\\
+}
+\end{minipage}\\
+
+%\vspace{5pt}
+
+%%%%%%%%%%%%%%%%% SUBTITLE AND LINKS TO GITHUB - LINKEDIN
+\begin{minipage}[c]{.46\textwidth}
+{\large \justifying Visionary financial leader\\with philanthropic dedication}
+\end{minipage}
+\hfill 
+\begin{minipage}[c]{.3\textwidth}
+	{\flushright
+	    \href{https://thecatapi.com/}{\includegraphics[width=20pt]{./img/github-mark}} 	    \hspace{5pt}
+\href{https://thecatapi.com/}{\includegraphics[width=20pt]{./img/In-CMYK-Blue-L}}\\
+}
+\end{minipage}\vspace{15pt}\\
+
+
+\begin{minipage}[t]{.17\textwidth}
+{\large Core skills}
+\end{minipage}
+\begin{minipage}[t]{.15\textwidth}
+finance\\
+$\thinspace$\\
+management\\
+soft ones\\
+\end{minipage}
+\begin{minipage}[t]{.63\textwidth}
+	investment management \myPipe financial analysis \myPipe risk assessment \myPipe wealth preservation \myPipe market research \\
+	team leadership \myPipe decision-making \myPipe project management\\
+	leadership \myPipe strategic thinking \myPipe communication 
+\end{minipage}\vspace{15pt}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5 PROFESSIOBAL EXPERIENCE
+\begin{minipage}{.5\textwidth}
+	{\LARGE Professional experience}
+\end{minipage}\\
+
+\event{  %%%%%%%%%%%%%%%%%% EVENT
+01.2000 - present
+}{Senior Financial Advisor at McDuck Enterprises}{
+As a Aromat-seasoned financial advisor, I 
+\begin{itemize}
+\item lead a team of financial analysts in identifying lucrative investment opportunities and managing diverse portfolios,
+\item implemented strategic financial planning initiatives resulting in significant revenue growth and asset accumulation,
+\item developed innovative risk management strategies to safeguard assets during market fluctuations.
+\end{itemize}
+}
+
+\event{1995 - 1999}{Investment Banker at Duckburg Bank}{ %%%%%%%%%%%%%%%%%% EVENT
+As a reckless Investment Banker, I
+\begin{itemize}
+\item Structured complex financial deals and facilitated mergers and acquisitions for corporate clients.
+\item Conducted thorough market research and financial analysis to support investment decisions,
+\item established long-term relationships with high-net-worth individuals and institutional investors.
+\end{itemize}}
+
+\hfill 
+
+
+%%%%%%%%%%%%%%%%%%%%%% EDUCATION
+\begin{minipage}[b]{.25\textwidth}
+{\LARGE Education}
+\end{minipage}
+\begin{minipage}[b]{.75\textwidth}
+{\large University of Paperopoli}
+\end{minipage}
+\\
+
+\event{1993 - 1995}{Master degree in Science of Finance \hfill \textcolor{darkgray}{110 cum laude}}{With a focus on quantum optics, quantum computing and statistical physics. Which indeed felt always out of context.}
+\event{1990 - 1993}{Bachelor degree in Finance \hfill \textcolor{darkgray}{110 cum laude}}{
+For my bachelor thesis in Finance, I meticulously analyzed the impact of economic policies on asset pricing, offering invaluable insights into the intricate relationship between government interventions and market behavior.
+}
+
+
+
+%%%%%%%%%%%%%% VOLUNTEERING
+\hspace{-4pt}\begin{minipage}[t]{.25\textwidth}
+	{\large Volunteering}
+\end{minipage}
+\begin{minipage}[t]{.75\textwidth}
+Duckburg Community Outreach Program \hfill 2010 - Present\\
+\textcolor{gray}{
+	As Financial Literacy Educator, I provided workshops and seminars on personal finance management to underprivileged communities.
+}
+\end{minipage}\vspace{15pt}\\
+
+\hspace{-4pt}\begin{minipage}[t]{.25\textwidth}
+	$\thinspace$
+\end{minipage}
+\begin{minipage}[t]{.75\textwidth}
+Duckburg Animal Shelter \hfill 2005 - 2009 \\
+\textcolor{gray}{As Fundraising Coordinator, I organized fundraising events and campaigns to support the shelter's operations and animal welfare initiatives.
+}
+\end{minipage}\vspace{15pt}\\
+
+\hspace{-4pt}\begin{minipage}[t]{.25\textwidth}
+	$\thinspace$
+\end{minipage}
+\vspace{15pt}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% LANGUAGES
+\hspace{-4pt}\begin{minipage}[t]{.25\textwidth}
+	{\large Languages}
+\end{minipage}
+\begin{minipage}[t]{.2\textwidth}
+	English\\Sign language\\Duck language
+\end{minipage}
+\begin{minipage}[t]{.1\textwidth}
+	native\\fluent\\native
+\end{minipage}
+\begin{minipage}[t]{.4\textwidth}
+	professional language for 20+ years\\ $\thinspace$ \\ Quack!
+\end{minipage}
+\vspace{15pt}\\
+
+% Getting trough the screen of automataed software is :(
+% A cheatcode is presented here, but I do not encourage you to use it.
+% Simply put all the keywords releavant to your job search here, in size tiny and font color white. 
+%\textcolor{white}{{\tiny Project management, CAD design, Python, MATLAB, Fortran}}
+\end{document}
