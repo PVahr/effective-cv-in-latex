@@ -18,3 +18,11 @@ Is the the core logic behind the whole document.
 There is a command '\event{}{}{}' to automatize the insertion of, yeap, an event.
 In the format time range, event name, description in light gray.
 In the folder 'img' there are the pictures of linkedin and github; of course remove or add what you need.
+
+
+
+The final product looks like this:
+
+
+
+![ ](https://github.com/PVahr/effective-cv-in-latex/blob/main/img/cv_screenshot.png)
