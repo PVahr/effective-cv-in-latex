@@ -9,7 +9,7 @@ It uses the Georgia font from the fontspec package.
 1. Download everything
 2. Change the content to your taste
 3. Complie under LuaLaTeX or XeLaTeX (the latter one hasn't been tested. Will it work?).
-It will not compile in Latex because of the 'fontspec' package
+It will not compile in pdfLatex because of the 'fontspec' package
 
 ## Code design
 The pdf is built out of 'minipage' environments.
